@@ -62,7 +62,7 @@ then
          sudo useradd ${input[2]}
     elif [ ${input[0]} == 'user' ] && [ ${input[1]} == 'list' ] && [ ${input[2]} == "--sudo-only" ]
     then
-          getent group sudo | cut -d: -f4
+          getent group sudo | cut -f4  -d ":"
     elif [ ${input[0]} == 'file' ] && [ ${input[1]} == 'getinfo' ] && [ ${input[2]} != "" ]
     then
           read -a text <<< $( ls -lh ${input[2]})
