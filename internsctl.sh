@@ -16,11 +16,11 @@ function help()
    echo "user list --sudo-only                                  Show all the user with sudo permissions"
    echo "file getinfo <file-name>                               Information about the file"
    echo "file getinfo <option> <file-name>                      Particular information about the file"
-   echo "<option> are"
-   echo "(--size)                                              to print size of the given file"
-   echo "(--permissions)                                       to print permission of the given file"
-   echo "(--Owner)                                             to print owner of the given file"
-   echo "(--last-modified)                                     to print last modified date of the given file"
+   echo "	<option>"
+   echo "		(--size)"
+   echo "		(--permissions)"
+   echo "		(--Owner)"
+   echo "		(--last-modified)"
     
 }
 
